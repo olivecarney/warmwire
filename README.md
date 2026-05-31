@@ -2,15 +2,7 @@
 
 Warmwire is a privacy-first Chrome extension for preparing one personalised cold outreach email at a time inside Gmail.
 
-It is built for people who want better first-contact emails without turning outreach into bulk automation. Warmwire helps you draft, review, and fill an email compose window, but you stay in control of every message.
-
-## About
-
-Warmwire runs locally in your browser as a Manifest V3 extension. The current version supports Gmail and is structured so Proton Mail, Outlook, and other webmail providers can be added later through provider adapters.
-
-Warmwire does not use the Gmail API, OAuth, a backend, paid AI APIs, bulk sending, auto-send, hidden tracking pixels, or inbox scraping. It never clicks Send. The user reviews and sends every email manually.
-
-The goal is simple: make thoughtful one-to-one outreach faster, while avoiding spammy workflows and invasive tracking.
+It helps you draft, review, and fill an email compose window, but you stay in control of every message. Warmwire does not use the Gmail API, OAuth, a backend, bulk sending, auto-send, hidden tracking pixels, or inbox scraping.
 
 ## Features
 
