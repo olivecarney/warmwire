@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Warmwire",
+  "version": "0.1.0",
+  "description": "Prepare one personalised cold outreach email at a time inside Gmail.",
+  "permissions": ["storage", "clipboardWrite"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "action": {
+    "default_title": "Warmwire",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/warmwire-16.png",
+      "32": "icons/warmwire-32.png",
+      "48": "icons/warmwire-48.png",
+      "128": "icons/warmwire-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/warmwire-16.png",
+    "32": "icons/warmwire-32.png",
+    "48": "icons/warmwire-48.png",
+    "128": "icons/warmwire-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["assets/content.js"],
+      "css": ["assets/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/warmwirelogo.png"],
+      "matches": ["https://mail.google.com/*"]
+    }
+  ]
+}

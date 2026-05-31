@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warmwire</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="ww-popup">
+      <header class="ww-popup-header">
+        <span class="ww-popup-logo-frame">
+          <img id="warmwire-logo" class="ww-popup-logo" alt="Warmwire logo" draggable="false" />
+        </span>
+        <div>
+          <p>Warmwire</p>
+          <span>Extension settings</span>
+        </div>
+      </header>
+
+      <section class="ww-popup-stats" aria-label="Warmwire status">
+        <div>
+          <strong id="contact-count">0</strong>
+          <span>Contacts</span>
+        </div>
+        <div>
+          <strong id="draft-count">0</strong>
+          <span>Drafts</span>
+        </div>
+      </section>
+
+      <section class="ww-popup-form">
+        <label>
+          <span>Tone</span>
+          <select id="tone">
+            <option>Warm</option>
+            <option>Concise</option>
+            <option>Formal</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Opportunity wording</span>
+          <textarea id="opportunity-wording" placeholder="e.g. internships, freelance projects, junior roles, temporary support"></textarea>
+        </label>
+      </section>
+
+      <div class="ww-popup-actions">
+        <button id="open-gmail" class="ww-popup-secondary">Open mail</button>
+        <button id="save-settings" class="ww-popup-primary">Save</button>
+      </div>
+
+      <p id="popup-message" class="ww-popup-message" role="status">Loading settings...</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

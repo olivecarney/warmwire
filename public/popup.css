@@ -1,0 +1,193 @@
+html,
+body {
+  margin: 0;
+  width: 340px;
+  min-height: 440px;
+  background: #fafafa;
+  color: #09090b;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ww-popup {
+  display: flex;
+  min-height: 440px;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 20% -10%, rgba(24, 24, 27, 0.08), transparent 28%),
+    #fafafa;
+}
+
+.ww-popup-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ww-popup-logo-frame {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #050505;
+  box-shadow: 0 10px 22px rgba(9, 9, 11, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.ww-popup-logo {
+  display: block;
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  transform: scale(1.72);
+}
+
+.ww-popup-header p {
+  margin: 0;
+  color: #09090b;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.ww-popup-header span {
+  color: #71717a;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.ww-popup-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.ww-popup-stats div {
+  border: 1px solid #e4e4e7;
+  border-radius: 10px;
+  background: #fff;
+  padding: 11px;
+  box-shadow: 0 1px 2px rgba(9, 9, 11, 0.04);
+}
+
+.ww-popup-stats strong,
+.ww-popup-stats span {
+  display: block;
+}
+
+.ww-popup-stats strong {
+  font-size: 22px;
+  font-weight: 650;
+  line-height: 24px;
+}
+
+.ww-popup-stats span {
+  color: #71717a;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.ww-popup-form {
+  display: grid;
+  gap: 12px;
+}
+
+.ww-popup-form label {
+  display: grid;
+  gap: 6px;
+  color: #18181b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ww-popup-form select,
+.ww-popup-form textarea {
+  width: 100%;
+  border: 1px solid #e4e4e7;
+  border-radius: 10px;
+  background: #fff;
+  color: #09090b;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(9, 9, 11, 0.04);
+}
+
+.ww-popup-form select {
+  height: 40px;
+  padding: 0 12px;
+}
+
+.ww-popup-form textarea {
+  min-height: 98px;
+  resize: vertical;
+  padding: 10px 12px;
+  line-height: 18px;
+}
+
+.ww-popup-form select:focus,
+.ww-popup-form textarea:focus {
+  border-color: #18181b;
+  box-shadow: 0 0 0 3px rgba(24, 24, 27, 0.11);
+}
+
+.ww-popup-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.ww-popup-actions button {
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
+}
+
+.ww-popup-actions button:hover {
+  transform: translateY(-1px);
+}
+
+.ww-popup-primary {
+  border: 1px solid #18181b;
+  background: #18181b;
+  color: #fff;
+}
+
+.ww-popup-primary:hover {
+  background: #27272a;
+}
+
+.ww-popup-secondary {
+  border: 1px solid #e4e4e7;
+  background: #fff;
+  color: #18181b;
+}
+
+.ww-popup-secondary:hover {
+  background: #f4f4f5;
+}
+
+.ww-popup-message {
+  margin: auto 0 0;
+  border-top: 1px solid #e4e4e7;
+  padding-top: 10px;
+  color: #71717a;
+  font-size: 12px;
+  line-height: 17px;
+}
