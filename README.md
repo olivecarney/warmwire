@@ -27,6 +27,22 @@ npm run dev
 
 Reload the extension from `chrome://extensions` after rebuilds.
 
+## Releases
+
+Every push to `main` builds the extension and creates a GitHub release.
+
+The release workflow:
+
+- runs `npm ci`
+- runs `npm run build`
+- validates that `package.json` and `public/manifest.json` use the same version
+- packages the generated `dist` folder as a ZIP
+- creates a release named `Warmwire v<version> (<short-sha>)`
+- uploads `warmwire-extension-v<version>-<short-sha>.zip`
+- generates release notes from commits since the previous tag
+
+When preparing a user-facing version, update both `package.json` and `public/manifest.json` to the same Chrome-compatible version, for example `0.2.0`.
+
 ## Project Structure
 
 ```text
