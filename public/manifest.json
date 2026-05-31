@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Warmwire",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Prepare one personalised cold outreach email at a time inside Gmail.",
   "permissions": ["storage", "clipboardWrite"],
   "host_permissions": ["https://mail.google.com/*"],

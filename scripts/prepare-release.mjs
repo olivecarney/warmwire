@@ -14,9 +14,9 @@ const version = packageJson.version;
 const shortSha = execFileSync("git", ["rev-parse", "--short=12", "HEAD"], {
   encoding: "utf8"
 }).trim();
-const tagName = `v${version}-${shortSha}`;
-const releaseName = `Warmwire v${version} (${shortSha})`;
-const assetName = `warmwire-extension-v${version}-${shortSha}.zip`;
+const tagName = `v${version}`;
+const releaseName = `Warmwire v${version}`;
+const assetName = `warmwire-extension-v${version}.zip`;
 
 let previousTag = "";
 try {
